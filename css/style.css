@@ -9986,15 +9986,27 @@ flex: 0 0 38px;
 
 }
 
+
 /* =========================================================
-   PRESTAZIONI - TUTTE LE CARD COME LA RISONANZA
+   PRESTAZIONI - CARD TUTTE IDENTICHE ALLA RISONANZA
 ========================================================= */
 
-.services-page .service-detail-card {
-    width: min(1450px, 94%) !important;
-    margin: 0 auto 40px !important;
+/*
+   Tutti i blocchi delle singole prestazioni hanno data-category:
+   risonanza, moc, cone-beam, mammografia, ecc.
+*/
+
+.prestazioni-page .services-page [data-category] {
+    width: calc(100% - 64px) !important;
+    max-width: 1120px !important;
+
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-bottom: 40px !important;
 
     padding: 48px !important;
+
+    box-sizing: border-box !important;
 
     background: #ffffff !important;
 
@@ -10002,21 +10014,6 @@ flex: 0 0 38px;
     border-radius: 18px !important;
 
     box-shadow: 0 4px 14px rgba(15, 45, 70, 0.04) !important;
-
-    overflow: hidden !important;
-}
-
-
-/* spazio tra una card e l'altra */
-.services-page .service-detail-card + .service-detail-card {
-    margin-top: 0 !important;
-}
-
-
-/* eventuali sezioni che avevano uno sfondo proprio */
-.services-page .service-detail-card:nth-of-type(even),
-.services-page .service-detail-card:nth-of-type(odd) {
-    background: #ffffff !important;
 }
 
 
@@ -10024,13 +10021,111 @@ flex: 0 0 38px;
 
 @media (max-width: 700px) {
 
-    .services-page .service-detail-card {
+    .prestazioni-page .services-page [data-category] {
         width: 92% !important;
-
-        margin-bottom: 25px !important;
+        max-width: none !important;
 
         padding: 24px !important;
+        margin-bottom: 26px !important;
 
+        border-radius: 14px !important;
+    }
+
+}
+
+/* =========================================================
+   NAVBAR PRESTAZIONI IDENTICA ALLA HOME
+========================================================= */
+
+.prestazioni-page .nav-link {
+    font-size: 16px !important;
+    font-weight: 600 !important;
+}
+
+.prestazioni-page .desktop-nav {
+    gap: 39px !important;
+}
+
+.prestazioni-page .btn-book,
+.prestazioni-page .desktop-book,
+.prestazioni-page .btn-book span,
+.prestazioni-page .desktop-book span {
+    font-size: 15px !important;
+    font-weight: 700 !important;
+}
+
+
+/* stessa riduzione della Home sugli schermi intermedi */
+
+@media (max-width: 1280px) {
+
+    .prestazioni-page .desktop-nav {
+        gap: 20px !important;
+    }
+
+    .prestazioni-page .btn-book,
+    .prestazioni-page .desktop-book {
+        padding-left: 18px !important;
+        padding-right: 18px !important;
+    }
+
+}
+
+/* =========================================================
+   PRESTAZIONI - CONTENITORE DEFINITIVO CARD
+========================================================= */
+
+.prestazioni-page .services-list-section > .services-page-container {
+    width: min(1120px, calc(100% - 64px));
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.prestazioni-page .services-list-section .service-detail-card {
+    width: 100% !important;
+    max-width: none !important;
+
+    margin: 0 0 40px 0 !important;
+
+    padding: 48px !important;
+
+    box-sizing: border-box !important;
+
+    background: #ffffff !important;
+
+    border: 1px solid #dfe6ee !important;
+    border-radius: 18px !important;
+
+    box-shadow: 0 4px 14px rgba(15, 45, 70, 0.04) !important;
+}
+
+
+/* TABLET */
+
+@media (max-width: 1050px) {
+
+    .prestazioni-page .services-list-section > .services-page-container {
+        width: 92%;
+    }
+
+    .prestazioni-page .services-list-section .service-detail-card {
+        padding: 35px 32px !important;
+    }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .prestazioni-page .services-list-section > .services-page-container {
+        width: 90%;
+    }
+
+    .prestazioni-page .services-list-section .service-detail-card {
+        padding: 24px 20px !important;
+        margin-bottom: 26px !important;
         border-radius: 14px !important;
     }
 
