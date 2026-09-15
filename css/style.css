@@ -11798,3 +11798,794 @@ flex: 0 0 38px;
 
 }
 
+/* =====================================================
+   ENDOSCOPIA - PAGINA DEDICATA
+===================================================== */
+
+.endo-page {
+    background: #f7f9fd;
+    color: #102238;
+}
+
+.endo-container {
+    width: min(1450px, 92%);
+    margin: 0 auto;
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.endo-hero {
+    padding: 28px 0 58px;
+}
+
+.endo-hero-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(420px, .85fr);
+
+    gap: 55px;
+
+    align-items: center;
+}
+
+
+/* TAG */
+
+.endo-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    margin-bottom: 20px;
+}
+
+.endo-tags span {
+    padding: 7px 11px;
+
+    background: #e2effd;
+    color: #0d557e;
+
+    border-radius: 999px;
+
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: .5px;
+}
+
+.endo-tags .endo-green-tag {
+    background: #def6e9;
+    color: #0b8c4d;
+}
+
+
+/* TITOLO */
+
+.endo-hero-content h1 {
+    margin: 0 0 20px;
+
+    color: #0b1e35;
+
+    font-size: clamp(39px, 4vw, 59px);
+    line-height: 1.07;
+
+    letter-spacing: -2px;
+
+    font-weight: 800;
+}
+
+.endo-hero-content h1 strong {
+    color: #1179b2;
+}
+
+
+/* INTRO */
+
+.endo-intro {
+    max-width: 790px;
+
+    margin: 0 0 28px;
+
+    color: #59687a;
+
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+
+/* CTA */
+
+.endo-hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    margin-bottom: 30px;
+}
+
+.endo-primary-button,
+.endo-secondary-button {
+    min-height: 50px;
+
+    padding: 0 22px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+
+    border-radius: 9px;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.endo-primary-button {
+    background: #137bae;
+    color: #ffffff;
+}
+
+.endo-secondary-button {
+    background: #e7f2ff;
+    color: #102238;
+}
+
+.endo-primary-button svg,
+.endo-secondary-button svg {
+    width: 17px;
+    height: 17px;
+}
+
+
+/* DATI VELOCI */
+
+.endo-quick-info {
+    max-width: 720px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 10px;
+}
+
+.endo-quick-info > div {
+    padding: 15px 16px;
+
+    background: #ffffff;
+
+    border: 1px solid #e4e9ef;
+    border-radius: 10px;
+}
+
+.endo-quick-info strong {
+    display: block;
+
+    margin-bottom: 3px;
+
+    color: #102238;
+
+    font-size: 16px;
+}
+
+.endo-quick-info span {
+    color: #68768a;
+
+    font-size: 11px;
+}
+
+
+/* =====================================================
+   HERO CARD DESTRA
+===================================================== */
+
+.endo-hero-card {
+    padding: 15px;
+
+    background: #ffffff;
+
+    border-radius: 17px;
+
+    box-shadow: 0 12px 35px rgba(17, 45, 72, .11);
+}
+
+.endo-machine-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    margin-bottom: 12px;
+
+    color: #33465b;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.endo-machine-label svg {
+    width: 18px;
+    color: #1683c4;
+}
+
+
+/* FOTO */
+
+.endo-hero-photo {
+    height: 325px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 12px;
+}
+
+.endo-hero-photo img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.endo-hero-photo > span {
+    position: absolute;
+
+    left: 15px;
+    bottom: 15px;
+
+    padding: 8px 12px;
+
+    background: #0b3e5d;
+    color: #ffffff;
+
+    border-radius: 6px;
+
+    font-size: 11px;
+    font-weight: 800;
+}
+
+
+/* TEAM */
+
+.endo-team-box {
+    margin-top: 10px;
+
+    padding: 15px;
+
+    background: #e9f3ff;
+
+    border-radius: 9px;
+}
+
+.endo-team-box > div {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+.endo-team-box svg {
+    width: 21px;
+    height: 21px;
+
+    color: #1683c4;
+}
+
+.endo-team-box span {
+    color: #617084;
+
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+.endo-team-box strong {
+    display: block;
+
+    color: #102238;
+
+    font-size: 13px;
+}
+
+
+/* =====================================================
+   PROTOCOLLO SCURO
+===================================================== */
+
+.endo-protocol-section {
+    padding: 58px 0 62px;
+
+    background: #071d34;
+}
+
+.endo-protocol-heading {
+    max-width: 860px;
+
+    margin-bottom: 32px;
+}
+
+.endo-protocol-heading > span {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #4bbdf1;
+
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.4px;
+}
+
+.endo-protocol-heading h2 {
+    margin: 0 0 11px;
+
+    color: #ffffff;
+
+    font-size: clamp(29px, 3vw, 40px);
+    line-height: 1.2;
+}
+
+.endo-protocol-heading p {
+    margin: 0;
+
+    color: #afbdcc;
+
+    font-size: 14px;
+    line-height: 1.65;
+}
+
+
+/* 3 FASI */
+
+.endo-protocol-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 18px;
+}
+
+.endo-protocol-card {
+    padding: 27px;
+
+    background: #0c2b49;
+
+    border: 1px solid rgba(255,255,255,.06);
+    border-radius: 13px;
+}
+
+.endo-protocol-icon {
+    width: 43px;
+    height: 43px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 18px;
+
+    background: #113a60;
+    color: #4bc0f3;
+
+    border-radius: 9px;
+}
+
+.endo-protocol-icon svg {
+    width: 21px;
+    height: 21px;
+}
+
+.endo-protocol-card > span {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #4bc0f3;
+
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.endo-protocol-card h3 {
+    margin: 0 0 9px;
+
+    color: #ffffff;
+
+    font-size: 17px;
+}
+
+.endo-protocol-card p {
+    margin: 0;
+
+    color: #acbbca;
+
+    font-size: 12.5px;
+    line-height: 1.65;
+}
+
+
+/* =====================================================
+   PRESTAZIONI
+===================================================== */
+
+.endo-services-section {
+    padding: 70px 0;
+}
+
+.endo-services-heading {
+    margin-bottom: 32px;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    gap: 40px;
+}
+
+.endo-services-heading > div > span,
+.endo-tech-heading > span {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #1683c4;
+
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.3px;
+}
+
+.endo-services-heading h2,
+.endo-tech-heading h2 {
+    margin: 0;
+
+    color: #102238;
+
+    font-size: clamp(30px, 3vw, 40px);
+    line-height: 1.2;
+}
+
+.endo-services-heading > p {
+    max-width: 470px;
+
+    margin: 0;
+
+    color: #68768a;
+
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+
+/* GRIGLIA */
+
+.endo-services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 18px;
+}
+
+.endo-service-card {
+    padding: 24px;
+
+    background: #ffffff;
+
+    border: 1px solid #e4eaf1;
+    border-radius: 14px;
+
+    box-shadow: 0 5px 15px rgba(20, 48, 75, .025);
+}
+
+.endo-service-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 10px;
+
+    margin-bottom: 17px;
+}
+
+.endo-service-icon {
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #e9f3fd;
+    color: #1683c4;
+
+    border-radius: 9px;
+}
+
+.endo-service-icon svg {
+    width: 20px;
+    height: 20px;
+}
+
+.endo-service-card-top > span {
+    padding: 6px 8px;
+
+    background: #edf4ff;
+    color: #1683c4;
+
+    border-radius: 999px;
+
+    font-size: 8px;
+    font-weight: 800;
+    letter-spacing: .5px;
+}
+
+.endo-service-card h3 {
+    margin: 0 0 9px;
+
+    color: #102238;
+
+    font-size: 17px;
+    line-height: 1.3;
+}
+
+.endo-service-card > p {
+    margin: 0 0 15px;
+
+    color: #637083;
+
+    font-size: 12.5px;
+    line-height: 1.65;
+}
+
+.endo-service-card ul {
+    margin: 0;
+
+    padding-left: 17px;
+
+    color: #566779;
+
+    font-size: 11.5px;
+    line-height: 1.7;
+}
+
+
+/* =====================================================
+   TECNICHE
+===================================================== */
+
+.endo-tech-section {
+    padding: 10px 0 70px;
+}
+
+.endo-tech-heading {
+    margin-bottom: 27px;
+    text-align: center;
+}
+
+.endo-tech-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 18px;
+}
+
+.endo-tech-grid article {
+    display: flex;
+    gap: 15px;
+
+    padding: 24px;
+
+    background: #eaf3ff;
+
+    border-radius: 13px;
+}
+
+.endo-tech-grid article > svg {
+    width: 24px;
+    height: 24px;
+
+    flex-shrink: 0;
+
+    color: #1683c4;
+}
+
+.endo-tech-grid h3 {
+    margin: 0 0 7px;
+
+    color: #102238;
+
+    font-size: 16px;
+}
+
+.endo-tech-grid p {
+    margin: 0;
+
+    color: #5e6e81;
+
+    font-size: 12px;
+    line-height: 1.65;
+}
+
+
+/* =====================================================
+   H12
+===================================================== */
+
+.endo-h12-section {
+    padding: 0 0 75px;
+}
+
+.endo-h12-box {
+    padding: 30px;
+
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+
+    gap: 22px;
+
+    background: #ffffff;
+
+    border: 1px solid #e2e8ef;
+    border-radius: 15px;
+}
+
+.endo-h12-icon {
+    width: 54px;
+    height: 54px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #071d34;
+    color: #4fc1f3;
+
+    border-radius: 12px;
+}
+
+.endo-h12-icon svg {
+    width: 26px;
+    height: 26px;
+}
+
+.endo-h12-box span {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #1683c4;
+
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.endo-h12-box h2 {
+    margin: 0 0 7px;
+
+    color: #102238;
+
+    font-size: 23px;
+}
+
+.endo-h12-box p {
+    max-width: 720px;
+
+    margin: 0;
+
+    color: #637083;
+
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.endo-h12-button {
+    min-height: 48px;
+
+    padding: 0 20px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    background: #0b4263;
+    color: #ffffff;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.endo-h12-button svg {
+    width: 17px;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 1050px) {
+
+    .endo-hero-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .endo-hero-card {
+        max-width: 760px;
+    }
+
+    .endo-protocol-grid,
+    .endo-services-grid,
+    .endo-tech-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 750px) {
+
+    .endo-container {
+        width: 90%;
+    }
+
+    .endo-hero {
+        padding-top: 20px;
+    }
+
+    .endo-hero-content h1 {
+        font-size: 36px;
+        letter-spacing: -1.2px;
+    }
+
+    .endo-intro {
+        font-size: 15px;
+    }
+
+    .endo-quick-info {
+        grid-template-columns: 1fr;
+    }
+
+    .endo-hero-actions {
+        flex-direction: column;
+    }
+
+    .endo-primary-button,
+    .endo-secondary-button {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .endo-hero-photo {
+        height: 260px;
+    }
+
+    .endo-protocol-grid,
+    .endo-services-grid,
+    .endo-tech-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .endo-services-heading {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .endo-h12-box {
+        grid-template-columns: 1fr;
+    }
+
+    .endo-h12-button {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+}
