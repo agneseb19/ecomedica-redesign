@@ -10130,3 +10130,335 @@ flex: 0 0 38px;
     }
 
 }
+
+/* =====================================================
+   PAGINA RM - FAQ
+===================================================== */
+
+.mri-faq-section {
+    padding: 76px 0 64px;
+    background: #f7f9fc;
+}
+
+.mri-faq-heading {
+    text-align: center;
+    margin-bottom: 42px;
+}
+
+.mri-faq-heading > span {
+    display: block;
+    margin-bottom: 10px;
+
+    color: #1683c4;
+
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.6px;
+
+    text-transform: uppercase;
+}
+
+.mri-faq-heading h2 {
+    margin: 0;
+
+    color: #102238;
+
+    font-size: clamp(32px, 3vw, 44px);
+    font-weight: 800;
+    line-height: 1.15;
+}
+
+.mri-faq-list {
+    width: min(1050px, 100%);
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.mri-faq-item {
+    padding: 27px 30px;
+
+    background: #ffffff;
+
+    border: 1px solid #edf1f5;
+    border-radius: 15px;
+
+    box-shadow: 0 5px 18px rgba(15, 45, 70, 0.035);
+}
+
+.mri-faq-question {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+
+    margin-bottom: 9px;
+}
+
+.mri-faq-question svg {
+    width: 23px;
+    height: 23px;
+
+    flex: 0 0 23px;
+
+    color: #1683c4;
+
+    margin-top: 2px;
+}
+
+.mri-faq-question h3 {
+    margin: 0;
+
+    color: #102238;
+
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.4;
+}
+
+.mri-faq-item p {
+    margin: 0;
+
+    color: #566477;
+
+    font-size: 15.5px;
+    line-height: 1.7;
+}
+
+
+/* =====================================================
+   PAGINA RM - FOOTER
+===================================================== */
+
+.mri-footer {
+    background: #edf3fc;
+
+    border-top: 1px solid #e0e8f2;
+
+    color: #536174;
+}
+
+.mri-footer-container {
+    width: min(1450px, 92%);
+    margin: 0 auto;
+
+    padding: 48px 0 20px;
+}
+
+.mri-footer-grid {
+    display: grid;
+
+    grid-template-columns:
+        1.15fr
+        1.2fr
+        1.05fr
+        1fr;
+
+    gap: 55px;
+
+    padding-bottom: 42px;
+}
+
+.mri-footer-column h3 {
+    margin: 0 0 17px;
+
+    color: #102238;
+
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.mri-footer-column p {
+    margin: 0 0 15px;
+
+    color: #536174;
+
+    font-size: 14px;
+    line-height: 1.65;
+}
+
+.mri-footer-column strong {
+    color: #22354b;
+    font-weight: 800;
+}
+
+.mri-footer-column > a {
+    display: block;
+
+    width: fit-content;
+
+    margin-bottom: 10px;
+
+    color: #536174;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    text-decoration: none;
+}
+
+.mri-footer-column > a:hover {
+    color: #1683c4;
+}
+
+.mri-footer-column p a {
+    color: #1683c4;
+
+    text-decoration: none;
+}
+
+.mri-footer-highlight {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    margin-top: 21px;
+
+    color: #536174;
+
+    font-size: 14px;
+}
+
+.mri-footer-highlight svg {
+    width: 19px;
+    height: 19px;
+
+    color: #1683c4;
+}
+
+.mri-footer-bottom {
+    padding-top: 22px;
+
+    border-top: 1px solid #d9e2ee;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 25px;
+
+    color: #657286;
+
+    font-size: 13px;
+}
+
+.mri-footer-divider {
+    margin: 0 10px;
+}
+
+.mri-footer-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.mri-footer-links a {
+    color: #536174;
+
+    text-decoration: none;
+}
+
+.mri-footer-links a:hover {
+    color: #1683c4;
+}
+
+
+/* =====================================================
+   RESPONSIVE FAQ + FOOTER
+===================================================== */
+
+@media (max-width: 1050px) {
+
+    .mri-footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px 55px;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .mri-faq-section {
+        padding: 55px 0;
+    }
+
+    .mri-faq-item {
+        padding: 22px 20px;
+    }
+
+    .mri-faq-question h3 {
+        font-size: 16px;
+    }
+
+    .mri-faq-item p {
+        font-size: 14px;
+    }
+
+    .mri-footer-container {
+        width: 90%;
+        padding-top: 38px;
+    }
+
+    .mri-footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .mri-footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .mri-footer-divider {
+        display: none;
+    }
+
+    .mri-footer-bottom > div:first-child span {
+        display: block;
+        margin-bottom: 7px;
+    }
+
+    .mri-footer-links {
+        flex-wrap: wrap;
+        gap: 12px 20px;
+    }
+
+}
+
+/* =====================================================
+   BREADCRUMB RISONANZA
+===================================================== */
+
+.mri-breadcrumb {
+    width: min(1450px, 92%);
+    margin: 0 auto;
+    padding: 38px 0 12px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 14px;
+}
+
+.mri-breadcrumb a {
+    color: #68768a;
+    text-decoration: none;
+}
+
+.mri-breadcrumb a:hover {
+    color: #1683c4;
+}
+
+.mri-breadcrumb strong {
+    color: #102238;
+    font-weight: 700;
+}
+
+.mri-breadcrumb svg {
+    width: 16px;
+    height: 16px;
+    color: #94a1b2;
+}
