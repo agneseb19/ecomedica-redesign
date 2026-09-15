@@ -9985,3 +9985,53 @@ flex: 0 0 38px;
     }
 
 }
+
+/* =========================================================
+   PRESTAZIONI - TUTTE LE CARD COME LA RISONANZA
+========================================================= */
+
+.services-page .service-detail-card {
+    width: min(1450px, 94%) !important;
+    margin: 0 auto 40px !important;
+
+    padding: 48px !important;
+
+    background: #ffffff !important;
+
+    border: 1px solid #dfe6ee !important;
+    border-radius: 18px !important;
+
+    box-shadow: 0 4px 14px rgba(15, 45, 70, 0.04) !important;
+
+    overflow: hidden !important;
+}
+
+
+/* spazio tra una card e l'altra */
+.services-page .service-detail-card + .service-detail-card {
+    margin-top: 0 !important;
+}
+
+
+/* eventuali sezioni che avevano uno sfondo proprio */
+.services-page .service-detail-card:nth-of-type(even),
+.services-page .service-detail-card:nth-of-type(odd) {
+    background: #ffffff !important;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .services-page .service-detail-card {
+        width: 92% !important;
+
+        margin-bottom: 25px !important;
+
+        padding: 24px !important;
+
+        border-radius: 14px !important;
+    }
+
+}
