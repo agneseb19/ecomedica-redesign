@@ -10740,3 +10740,1061 @@ flex: 0 0 38px;
     }
 
 }
+
+/* =====================================================
+   MOC HORIZON DXA - PAGINA DEDICATA
+===================================================== */
+
+.moc-page {
+    background: #f7f9fd;
+    color: #102238;
+}
+
+.moc-container {
+    width: min(1450px, 92%);
+    margin: 0 auto;
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.moc-hero {
+    padding: 32px 0 48px;
+}
+
+.moc-hero-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.08fr) minmax(430px, .92fr);
+    gap: 54px;
+    align-items: center;
+}
+
+
+/* TAG */
+
+.moc-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    margin-bottom: 22px;
+}
+
+.moc-tags span {
+    padding: 7px 11px;
+
+    border-radius: 999px;
+
+    background: #dfeefe;
+    color: #0c527e;
+
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: .4px;
+}
+
+.moc-tags .moc-green-tag {
+    background: #dff7ec;
+    color: #07884d;
+}
+
+
+/* TITOLO */
+
+.moc-hero-content h1 {
+    margin: 0 0 20px;
+
+    color: #0b1e35;
+
+    font-size: clamp(38px, 4.2vw, 60px);
+    line-height: 1.07;
+    letter-spacing: -2px;
+    font-weight: 800;
+}
+
+.moc-hero-content h1 strong {
+    color: #1476ad;
+}
+
+
+/* INTRO */
+
+.moc-intro {
+    max-width: 780px;
+
+    margin: 0 0 26px;
+
+    color: #566477;
+
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+
+/* DATI HERO */
+
+.moc-hero-data {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+
+    margin-bottom: 22px;
+}
+
+.moc-hero-data > div {
+    padding: 15px;
+
+    background: #ffffff;
+
+    border: 1px solid #e4eaf1;
+    border-radius: 11px;
+}
+
+.moc-hero-data span {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #1683c4;
+
+    font-size: 10px;
+    font-weight: 800;
+}
+
+.moc-hero-data strong {
+    display: block;
+
+    margin-bottom: 2px;
+
+    color: #102238;
+
+    font-size: 16px;
+}
+
+.moc-hero-data small {
+    color: #637083;
+
+    font-size: 12px;
+}
+
+
+/* BOTTONI HERO */
+
+.moc-hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.moc-primary-button,
+.moc-secondary-button {
+    min-height: 50px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+
+    padding: 0 22px;
+
+    border-radius: 9px;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.moc-primary-button {
+    background: #1177af;
+    color: #ffffff;
+}
+
+.moc-secondary-button {
+    background: #e8f2ff;
+    color: #102238;
+}
+
+.moc-primary-button svg,
+.moc-secondary-button svg {
+    width: 17px;
+    height: 17px;
+}
+
+
+/* =====================================================
+   HERO DESTRA
+===================================================== */
+
+.moc-hero-media {
+    padding: 15px;
+
+    background: #ffffff;
+
+    border-radius: 17px;
+
+    box-shadow: 0 12px 35px rgba(17, 45, 72, .10);
+}
+
+.moc-machine-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    margin-bottom: 12px;
+
+    color: #33455a;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.moc-machine-label svg {
+    width: 17px;
+    color: #1683c4;
+}
+
+
+/* FOTO */
+
+.moc-photo {
+    height: 315px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 12px;
+}
+
+.moc-photo img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.moc-photo > span {
+    position: absolute;
+    left: 14px;
+    bottom: 14px;
+
+    padding: 8px 12px;
+
+    background: #0c3c5c;
+    color: #ffffff;
+
+    border-radius: 6px;
+
+    font-size: 11px;
+    font-weight: 800;
+}
+
+
+/* DUE BOX */
+
+.moc-photo-features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 9px;
+
+    margin-top: 10px;
+}
+
+.moc-photo-features > div {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+
+    padding: 13px;
+
+    background: #edf4ff;
+
+    border-radius: 9px;
+}
+
+.moc-photo-features svg {
+    width: 18px;
+    height: 18px;
+
+    flex-shrink: 0;
+
+    color: #1683c4;
+}
+
+.moc-photo-features p {
+    margin: 0;
+
+    color: #58677a;
+
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+.moc-photo-features strong {
+    display: block;
+
+    margin-bottom: 3px;
+
+    color: #102238;
+
+    font-size: 12px;
+}
+
+
+/* CONTATTO */
+
+.moc-contact-box {
+    margin-top: 10px;
+    padding: 13px 15px;
+
+    background: #edf4ff;
+
+    border-radius: 9px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.moc-contact-box > div {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.moc-contact-box svg {
+    width: 18px;
+    color: #1683c4;
+}
+
+.moc-contact-box span {
+    color: #667488;
+
+    font-size: 11px;
+}
+
+.moc-contact-box strong {
+    display: block;
+
+    color: #102238;
+
+    font-size: 12px;
+}
+
+.moc-contact-box a {
+    color: #1683c4;
+
+    font-size: 12px;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+
+/* =====================================================
+   STRISCIA SCURA
+===================================================== */
+
+.moc-facts {
+    background: #071d34;
+}
+
+.moc-facts-container {
+    width: min(1450px, 94%);
+    margin: 0 auto;
+
+    min-height: 82px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+}
+
+.moc-facts-container > div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 15px 24px;
+}
+
+.moc-facts-container svg {
+    width: 22px;
+    height: 22px;
+
+    color: #42b4ed;
+}
+
+.moc-facts-container span {
+    color: #aebed0;
+
+    font-size: 11px;
+}
+
+.moc-facts-container strong {
+    display: block;
+
+    margin-bottom: 2px;
+
+    color: #ffffff;
+
+    font-size: 13px;
+}
+
+
+/* =====================================================
+   3 VANTAGGI
+===================================================== */
+
+.moc-benefits-section {
+    padding: 70px 0;
+}
+
+.moc-section-heading {
+    max-width: 800px;
+
+    margin: 0 auto 40px;
+
+    text-align: center;
+}
+
+.moc-section-heading > span,
+.moc-more-heading > span {
+    color: #1683c4;
+
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.moc-section-heading h2,
+.moc-more-heading h2 {
+    margin: 8px 0 10px;
+
+    color: #102238;
+
+    font-size: clamp(30px, 3vw, 42px);
+    line-height: 1.15;
+}
+
+.moc-section-heading p {
+    margin: 0;
+
+    color: #68768a;
+
+    font-size: 15px;
+    line-height: 1.65;
+}
+
+
+/* CARD */
+
+.moc-benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.moc-benefit-card {
+    padding: 30px;
+
+    background: #ffffff;
+
+    border: 1px solid #e5ebf2;
+    border-radius: 15px;
+
+    box-shadow: 0 5px 16px rgba(20, 48, 75, .035);
+}
+
+.moc-benefit-icon {
+    width: 48px;
+    height: 48px;
+
+    margin-bottom: 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #e7f2fe;
+    color: #1683c4;
+
+    border-radius: 10px;
+}
+
+.moc-benefit-icon svg {
+    width: 25px;
+    height: 25px;
+}
+
+.moc-card-eyebrow {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #1683c4;
+
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: .8px;
+}
+
+.moc-benefit-card h3 {
+    margin: 0 0 13px;
+
+    color: #102238;
+
+    font-size: 19px;
+    line-height: 1.35;
+}
+
+.moc-benefit-card p {
+    color: #5c6a7c;
+
+    font-size: 13px;
+    line-height: 1.65;
+}
+
+.moc-benefit-card p strong {
+    color: #25384f;
+}
+
+.moc-benefit-note {
+    margin-top: 20px;
+    padding: 11px 13px;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    background: #edf4ff;
+    color: #24506d;
+
+    border-radius: 8px;
+
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.moc-benefit-note svg {
+    width: 16px;
+    color: #1683c4;
+}
+
+
+/* BODYLOGIC */
+
+.moc-bodylogic-data {
+    margin-top: 18px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 7px;
+}
+
+.moc-bodylogic-data span {
+    padding: 8px 9px;
+
+    background: #edf4ff;
+
+    border-radius: 7px;
+
+    color: #37516c;
+
+    font-size: 11px;
+    font-weight: 700;
+}
+
+/* =====================================================
+   MOC - APPLICAZIONI / PANNELLO CLINICO
+===================================================== */
+
+.moc-clinical-section {
+    padding: 72px 0 65px;
+    background: #f7f9fd;
+}
+
+.moc-clinical-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.35fr) minmax(360px, .8fr);
+    gap: 42px;
+    align-items: center;
+}
+
+
+/* TESTATA SINISTRA */
+
+.moc-clinical-heading {
+    margin-bottom: 26px;
+}
+
+.moc-clinical-heading > span,
+.moc-exam-types-heading > div > span {
+    display: block;
+    margin-bottom: 8px;
+
+    color: #1683c4;
+
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.3px;
+}
+
+.moc-clinical-heading h2,
+.moc-exam-types-heading h2 {
+    margin: 0 0 12px;
+
+    color: #102238;
+
+    font-size: 32px;
+    line-height: 1.2;
+    font-weight: 800;
+}
+
+.moc-clinical-heading p {
+    max-width: 720px;
+    margin: 0;
+
+    color: #667488;
+
+    font-size: 14px;
+    line-height: 1.65;
+}
+
+
+/* RIGHE APPLICAZIONI */
+
+.moc-clinical-list {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.moc-clinical-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 17px;
+
+    padding: 17px 19px;
+
+    background: #ffffff;
+
+    border: 1px solid #e9edf3;
+    border-radius: 11px;
+}
+
+.moc-clinical-icon {
+    width: 38px;
+    height: 38px;
+
+    flex: 0 0 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #e8f3fa;
+    color: #1683c4;
+
+    border-radius: 50%;
+}
+
+.moc-clinical-icon svg {
+    width: 18px;
+    height: 18px;
+}
+
+.moc-clinical-row h3 {
+    margin: 0 0 5px;
+
+    color: #102238;
+
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.moc-clinical-row p {
+    margin: 0;
+
+    color: #657387;
+
+    font-size: 12.5px;
+    line-height: 1.55;
+}
+
+
+/* =====================================================
+   PANNELLO SCURO
+===================================================== */
+
+.moc-parameters-panel {
+    padding: 27px;
+
+    background: #071d34;
+    color: #ffffff;
+
+    border-radius: 15px;
+
+    box-shadow: 0 15px 35px rgba(8, 30, 52, .13);
+    align-self: center;
+}
+
+.moc-parameters-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    padding-bottom: 18px;
+    margin-bottom: 5px;
+
+    border-bottom: 1px solid rgba(255,255,255,.12);
+}
+
+.moc-parameters-heading span {
+    display: block;
+    margin-bottom: 4px;
+
+    color: #54b8ee;
+
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.moc-parameters-heading h3 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.moc-parameters-heading > svg {
+    width: 22px;
+    height: 22px;
+
+    color: #4fc1f3;
+}
+
+.moc-parameter-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 13px;
+
+    padding: 17px 0;
+
+    border-bottom: 1px solid rgba(255,255,255,.09);
+}
+
+.moc-parameter-item > svg {
+    width: 19px;
+    height: 19px;
+
+    flex-shrink: 0;
+
+    color: #4fc1f3;
+}
+
+.moc-parameter-item strong {
+    display: block;
+    margin-bottom: 4px;
+
+    color: #ffffff;
+
+    font-size: 13px;
+}
+
+.moc-parameter-item p {
+    margin: 0;
+
+    color: #b7c4d2;
+
+    font-size: 11px;
+    line-height: 1.55;
+}
+
+.moc-parameters-footer {
+    display: flex;
+    gap: 10px;
+
+    padding-top: 18px;
+}
+
+.moc-parameters-footer svg {
+    width: 17px;
+    height: 17px;
+
+    flex-shrink: 0;
+
+    color: #4fc1f3;
+}
+
+.moc-parameters-footer p {
+    margin: 0;
+
+    color: #b7c4d2;
+
+    font-size: 10.5px;
+    line-height: 1.55;
+}
+
+
+/* =====================================================
+   MOC - ESAMI DISPONIBILI
+===================================================== */
+
+.moc-exam-types-section {
+    padding: 25px 0 72px;
+    background: #f7f9fd;
+}
+
+.moc-exam-types-heading {
+    margin-bottom: 28px;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.moc-exam-types-heading h2 {
+    margin-bottom: 0;
+}
+
+.moc-exam-types-heading > p {
+    width: min(450px, 100%);
+    margin: 0;
+
+    color: #68768a;
+
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.moc-exam-types-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.moc-exam-type {
+    position: relative;
+
+    padding: 27px 24px 23px;
+
+    background: #ffffff;
+
+    border: 1px solid #e5eaf0;
+    border-radius: 13px;
+}
+
+.moc-exam-number {
+    width: 36px;
+    height: 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 17px;
+
+    background: #e5f2fa;
+    color: #106d9f;
+
+    border-radius: 50%;
+
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.moc-exam-type:nth-child(1) .moc-exam-number {
+    background: #fff0dd;
+    color: #c57918;
+}
+
+.moc-exam-type h3 {
+    margin: 0 0 10px;
+
+    color: #102238;
+
+    font-size: 17px;
+    font-weight: 800;
+}
+
+.moc-exam-type p {
+    margin: 0 0 18px;
+
+    color: #637083;
+
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.moc-exam-type-label {
+    width: fit-content;
+
+    padding: 6px 9px;
+
+    background: #edf4ff;
+    color: #1683c4;
+
+    border-radius: 6px;
+
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: .4px;
+}
+
+/* =====================================================
+   ALTRE FUNZIONALITÀ
+===================================================== */
+
+.moc-more-section {
+    padding: 10px 0 75px;
+}
+
+.moc-more-heading {
+    margin-bottom: 30px;
+
+    text-align: center;
+}
+
+.moc-more-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.moc-more-grid article {
+    padding: 23px;
+
+    display: flex;
+    gap: 15px;
+
+    background: #ffffff;
+
+    border: 1px solid #e5ebf2;
+    border-radius: 13px;
+}
+
+.moc-more-grid article > svg {
+    width: 25px;
+    height: 25px;
+
+    flex-shrink: 0;
+
+    color: #1683c4;
+}
+
+.moc-more-grid h3 {
+    margin: 0 0 7px;
+
+    color: #102238;
+
+    font-size: 16px;
+}
+
+.moc-more-grid p {
+    margin: 0;
+
+    color: #617083;
+
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 1050px) {
+
+    .moc-hero-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .moc-hero-media {
+        max-width: 750px;
+    }
+
+    .moc-benefits-grid,
+    .moc-more-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .moc-facts-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .moc-container {
+        width: 90%;
+    }
+
+    .moc-hero {
+        padding-top: 20px;
+    }
+
+    .moc-hero-content h1 {
+        font-size: 36px;
+        letter-spacing: -1.3px;
+    }
+
+    .moc-intro {
+        font-size: 15px;
+    }
+
+    .moc-hero-data {
+        grid-template-columns: 1fr;
+    }
+
+    .moc-hero-actions {
+        flex-direction: column;
+    }
+
+    .moc-primary-button,
+    .moc-secondary-button {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .moc-photo {
+        height: 250px;
+    }
+
+    .moc-photo-features {
+        grid-template-columns: 1fr;
+    }
+
+    .moc-contact-box {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .moc-facts-container {
+        grid-template-columns: 1fr;
+    }
+
+    .moc-facts-container > div {
+        border-bottom: 1px solid rgba(255,255,255,.08);
+    }
+
+    .moc-benefits-section {
+        padding: 55px 0;
+    }
+
+    .moc-benefit-card {
+        padding: 24px 20px;
+    }
+
+}
+
